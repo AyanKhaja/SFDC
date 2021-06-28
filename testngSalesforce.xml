@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="SFDC-Salesforce" parallel="none" thread-count="1">
+
+	<listeners>
+		<listener class-name="utilities.Executor" />
+	</listeners>
+	
+	<test verbose="2" name="ACCOUNTS">
+		<classes>
+			<class name="tests.accounts.InventoryProfileHCOAccount_AgencyPartnerUser" />
+			<class name="tests.accounts.AffiliationsBetweenTwoHCPRecord" />
+			<class name="tests.accounts.CreateEditViewNationalAccount_AgencyPartnerUser" />
+			<class name="tests.accounts.AffiliationsFromHCPRecord" />
+			<class name="tests.accounts.EditHCOShipToAccount" />
+			<class name="tests.accounts.AffiliationsFromHCORecord" />
+			<class name="tests.accounts.ViewBillToAccount_AgencyPartnerUser" />
+			<class name="tests.accounts.ViewAgencyAccount_AgencyPartnerUser" />
+			<class name="tests.accounts.CreateEditViewAgencyAccount_ABDUser" />
+			<class name="tests.accounts.AddAccountTeamAgencyAccount_ABDUser" />
+			<class name="tests.accounts.ViewAccountTeam_AgencyPartnerUser" />
+			<class name="tests.accounts.AffiliationsBetweenHCPAndVendorRecord" />
+			<class name="tests.accounts.ValidateStandardizeProfessionalSocieties" />
+			<class name="tests.accounts.ViewHCOShipToRecord" />
+			<class name="tests.accounts.ViewBusinessAccount_ABDUser" />
+			<class name="tests.accounts.ViewOtherAccount_AgencyPartnerUser" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="CAMPAIGNS">
+		<classes>
+			<class name="tests.Campaigns.AddCampaignMembers" />
+			<class name="tests.Campaigns.AddCampaignMembersFromContacts" />
+			<class name="tests.Campaigns.CreateCampaign_InternalExternal" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="CHATTER">
+		<classes>
+			<class name="tests.Chatter.CreateNewChatterPost" />
+			<class name="tests.Chatter.CreateNewGroup_AgencypartnerUser" />
+			<class name="tests.Chatter.CreateNewGroup_ABDUser" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="CONTACTS">
+		<classes>
+			<class name="tests.contacts.ValidateNewFieldsForContactsPage" />
+			<class name="tests.contacts.Create_Edit_View_DistributorEmployee" />
+			<class name="tests.contacts.Edit_View_ArthrexEmployee" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="CLT">
+		<classes>
+			<class name="tests.ContractLifeCycleTracker.ViewCPA_AgencyUser" />
+			<class name="tests.ContractLifeCycleTracker.ViewCPANAC_FromAccounts" />
+			<class name="tests.ContractLifeCycleTracker.ViewNAC_NationalAccountUser" />
+			<class name="tests.ContractLifeCycleTracker.CreateNAC_ContractAdminUser" />
+			<class name="tests.ContractLifeCycleTracker.ViewServiceContractFromHCOShipToAccount" />
+			<class name="tests.ContractLifeCycleTracker.Create_Edit_View_UsageAgreement" />
+			<class name="tests.ContractLifeCycleTracker.Create_Edit_View_ServiceContract" />	
+			<class name="tests.ContractLifeCycleTracker.Create_Edit_View_CLTAccount" />
+			<class name="tests.ContractLifeCycleTracker.Create_Edit_View_CLTProducts" />
+			<class name="tests.ContractLifeCycleTracker.Create_View_SurgeonVaultRecordFromServiceContract" />	
+			<class name="tests.ContractLifeCycleTracker.Create_Edit_View_ArthrexCreditLease" />
+			<class name="tests.ContractLifeCycleTracker.Create_View_ArthrexCreditLease_FromAccounts" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="EVENTS">
+		<classes>
+			<class name="tests.events.CreateEditViewCloneSurgicalCaseEventFromHcpPersonAcc" />
+			<class name="tests.events.CreateEditViewCloneSurgicalCaseEventFromOpportunity" />
+			<class name="tests.events.CreateEditViewCloneSurgicalCaseEventCalendar" />
+			<class name="tests.events.CreateEditViewCloneSurgicalCaseEventFromHCO" />
+			<class name="tests.events.CreateEditViewLocalLabEventCalendar" />
+			<class name="tests.events.CreateEditViewLocalLabEventFromHCO" />
+			<class name="tests.events.CreateEditViewLocalLabEventFromHcpPersonAcc" />
+			<class name="tests.events.CreateEditViewMeetingEventFromCalendar" />
+			<class name="tests.events.CreateEditViewMeetingEventFromHCO" />
+			<class name="tests.events.CreateEditViewMeetingEventFromHcpPersonAcc" />
+			<class name="tests.events.CreateEditViewMeetingEventFromOpportunity" />
+			<class name="tests.events.CreateEditViewDemonstrationEventFromCalendar" />
+			<class name="tests.events.CreateEditViewDemonstrationEventFromHCO" />
+			<class name="tests.events.CreateEditViewDemonstrationEventFromHcpPersonAcc" />
+			<class name="tests.events.CreateEditViewDemonstrationEventFromOpportunity" />
+			<class name="tests.events.CreateEditViewTrainingEventCalendar" />
+			<class name="tests.events.ViewGEMSEventsFromCalendar" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="HIERARCHYPLANNING"> 
+		<classes>
+			<class name="tests.HierarchyPlanning.VerifyPagelayout_HierarchyPlanning" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="HIRINGQUOTA">
+		<classes>
+			<class name="tests.HiringQuota.HiringQuota_NationalSalesUser" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="HOME">
+		<classes>
+			<class name="tests.home.MyProfileHomeVerification" />
+			<class name="tests.home.MyProfileDetailsVerification" />
+		</classes>
+	</test>
+
+	<!-- <test verbose="2" name="LEADS"> -->
+		<!-- <classes> -->
+			<!-- <class name="tests.leads.ConvertLeadRecordExistingAccountNewEmail"/> -->
+			<!-- <class name="tests.leads.ConvertLeadRecordNewAccount" /> -->
+			<!-- <class name="tests.leads.EditConferenceLead" /> -->
+			<!-- <class name="tests.leads.ConvertLeadRecordExistingAccountExistingEmail"/> -->
+			<!-- <class name="tests.leads.LeadRecord" /> -->
+			<!-- <class name="tests.leads.ViewConferenceLead" /> -->
+		<!-- </classes> -->
+	<!-- </test> -->
+
+	<test verbose="2" name="LEADSAPP">
+		<classes>
+			<class name="tests.LeadsApp.CreateNewNonSurgeonAttendee" />
+			<class name="tests.LeadsApp.CreateNewConference" />
+			<class name="tests.LeadsApp.ConferenceAttendeeUpload" />
+			<class name="tests.LeadsApp.CreateNewSurgeonAttendee" />
+			<class name="tests.LeadsApp.CreateNewInterest" />
+			<class name="tests.LeadsApp.VerifyConferenceMemberStage" />
+			<class name="tests.LeadsApp.VerifyConferenceRep" />
+			<class name="tests.LeadsApp.VerifyConferenceRepStage" />
+			<class name="tests.LeadsApp.VerifyCreatingLeadConferenceAttendeeUpload" />
+			<class name="tests.LeadsApp.VerifyCreatingSurgeonConferenceAttendeeUpload" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="OPPORTUNITIES">
+		<classes>
+			<class name="tests.opportunities.ViewNationalAccountOpportunity_OtherUsers" />
+			<class name="tests.opportunities.ViewAgreementOpportunitySurgeon_AGENCYPARTNER" />
+			<class name="tests.opportunities.AgreementOpportunity_AGENCYPARTNER" />
+			<class name="tests.opportunities.ArthroplastyOpportunity_AGENCYPARTNER" />
+			<class name="tests.opportunities.CapitalEquipmentOpportunity_AGENCYPARTNER" />
+			<class name="tests.opportunities.InstrumentPurchaseOpportunity_AGENCYPARTNER" />
+			<class name="tests.opportunities.NationalAccountOpportunity_AGENCYPARTNER" />
+			<class name="tests.opportunities.NationalAccountOpportunity_ABDUser" />
+			<class name="tests.opportunities.NationalAccountOpportunity_NationalAccountUser" />
+			<class name="tests.opportunities.ProductConversionOpportunity_AGENCYPARTNER" />
+			<class name="tests.opportunities.StockingOrderOpportunity_AGENCYPARTNER" />
+			<class name="tests.opportunities.Create_Edit_View_ServiceRenewalOpportunity" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="PERSONACCOUNTS">
+		<classes>
+			<class
+				name="tests.personAccounts.ViewEditSurgeonPreferenceCardsFromPersonAcc" />
+			<class name="tests.personAccounts.CreateEditHcpSurgeonSubscriptionsPersonAcc" />
+			<class name="tests.personAccounts.ViewEditHcpRecord" />
+			<class name="tests.personAccounts.CreateSurgeonSubscriptions_VerifyWarningMessages" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="REQUESTS">
+		<classes>
+			<class name="tests.requests.ApprovedDatesMedicalEducation_MeetingAndEventUsers" />
+			<class name="tests.requests.ApprovedDatesRequests_AgencyPartner" />
+			<class name="tests.requests.ApprovedDatesCorporateSales_MeetingAndEventUsers" />
+			<class name="tests.requests.WorkFlowProcessSDLFellow_MexicoDivision" />
+			<class name="tests.requests.WorkFlowProcessSDLFellow_BrazilDivision" />
+			<class name="tests.requests.ExhibitCongress_AgencyPartner" />
+			<class name="tests.requests.WorkFlowProcessSDL_MexicoDivision" />
+			<class name="tests.requests.CreateSingleDayLabRequest" />
+			<class name="tests.requests.CreateSingleDayLabWithFellowsRequest" />
+			<class name="tests.requests.WorkFlowProcessMedicalEducation_BrazilDivision" />
+			<class name="tests.requests.WorkFlowProcessSDL_BrazilDivision" />
+			<class name="tests.requests.WorkFlowProcessMedicalEducation_MexicoDivision" />
+			<class name="tests.requests.CancelRequest" />
+			<class name="tests.requests.CreateHCPBusinessMeetingRequest" />
+			<class name="tests.requests.CreateInstructorRequest" />
+			<class name="tests.requests.CreateSponsorshipWorkshopRequest" />
+			<class name="tests.requests.CreateMedicalEducationRequest" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="RESOURCES">
+		<classes>
+			<class name="tests.resources.Resources" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="TASKS">
+		<classes>
+			<class name="tests.tasks.CreateEditDigitalActivityTask" />
+			<class name="tests.tasks.CreateAxisActivityTasksOpportunity" />
+			<class name="tests.tasks.CreateAxisActivityGeneralTasks" />
+			<class name="tests.tasks.CreateEditLeadsAppActivityTask" />
+			<class name="tests.tasks.CreateEditAxisActivityTasksSurgicalCase" />
+		</classes>
+	</test>
+	
+	<test verbose="2" name="TICKETS-HCP">
+		<classes>
+			<class name="tests.tickets.ApprovalProcessTicketsHierarchyChangeRequestDenied" />
+			<class name="tests.tickets.ApprovalProcessTicketsHierarchyChangeRequest" />
+			<class name="tests.tickets.CreateQuestionTickets" />
+			<class name="tests.tickets.CreateNewHcpTickets" />
+			<class name="tests.tickets.ViewTicketsAgencyPartner" />
+			<class name="tests.tickets.CreateIssueTickets" />
+			<class name="tests.tickets.TicketsCreationEditInternalUser" />
+			<class name="tests.tickets.CreateSuggestionTickets" />
+			<class name="tests.tickets.CreateNewSecondaryHCP" />
+			<class name="tests.tickets.CreateHelpAndFeedbackTicket" />
+			
+		</classes>
+	</test>
+	
+	<test verbose="2" name="TICKETS-ORTHOPEDIA">
+		<classes>
+			<class name="tests.tickets.orthopedia.ApproveOrthopediaTicketHCPDataValidation" />
+			<class name="tests.tickets.orthopedia.AutoApprovalOrthopediaTicket" />
+			<class name="tests.tickets.orthopedia.BounceEmail" />
+			<class name="tests.tickets.orthopedia.OrthopediaTicket_CreateEditView" />
+			<class name="tests.tickets.orthopedia.RejectOrthopediaTicketExistingAccountValidation" />
+			<class name="tests.tickets.orthopedia.RejectOrthopediaTicketHCPDataValidation" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="TICKETS-ORTHOILLUSTRATED">
+		<classes>
+			<class name="tests.tickets.orthoillustrated.AddOrthoillustrated_ApprovalProcess" />
+			<class name="tests.tickets.orthoillustrated.UpdateOrthoillustrated_OIAdminApprovalProcess" />
+			<class name="tests.tickets.orthoillustrated.UpdateOrthoillustrated_ApprovalProcess" />
+			<class name="tests.tickets.orthoillustrated.RemoveOrthoIllustrated_ApprovalProcess" />
+			<class name="tests.tickets.orthoillustrated.RejectOrthoillustrated_InternalBraceApproval" />
+			<class name="tests.tickets.orthoillustrated.RejectOrthoillustrated_OIAdminApproval" />
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="SFDC-Salesforce" parallel="none" thread-count="1">
+
+	<listeners>
+		<listener class-name="utilities.Executor" />
+	</listeners>
+	 
+	<test verbose="2" name="REQUEST-Single Day Lab">
+    <classes>
+    
+    	 <class name="tests.requests.CreateSingleDayLabRequest"/>
+    	 <class name="tests.requests.ApprovalProcessSDL_ArthrexMexico"/>
+    	 <class name="tests.requests.ApprovalProcessSDL_ArthrexSingapore"/>
+    	 <class name="tests.requests.ApprovalProcessSDL_ArthrexCorporateHeadquarters_FootandAnkle"/>
+    	 <class name="tests.requests.ApprovalProcessSDL_ArthroLabTMMexicoCity"/>
+    	 <class name="tests.requests.ApprovalProcessSDL_ArthrexCorporateHeadquarters_LATAMNaples"/>
+    	 <class name="tests.requests.ApprovalProcessSDL_ArthrexCorporateHeadquarters_HandWristElb"/>
+      	 <class name="tests.requests.ApprovalProcessSDL_ArthrexBrazil"/>
+      	 <class name="tests.requests.ApprovalProcessSDL_MexicoMobileLearningCenter"/>
+      	 <class name="tests.requests.ApprovalProcessSDL_ArthrexCorporateHeadquarters_OrthoImagandResec"/>
+      	 <class name="tests.requests.ApprovalProcessSDL_ArthrexCorporateHeadquarters_SholderKneeHipArth"/>
+      	 <class name="tests.requests.ApprovalProcessSDL_ArthrexMexicoMonterrey"/>
+         
+    </classes>
+    </test>
+    
+    <test verbose="2" name="REQUEST-Single Day Lab w/Fellow">
+    <classes>
+    
+      	 <class name="tests.requests.CreateSingleDayLabWithFellowsRequest"/>
+    	 <class name="tests.requests.ApprovalProcessSDLFellow_MexicoMobileLearningCenter"/>
+    	 <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexCorporateHeadquarters_LATAMNaples"/>
+    	 <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexCorporateHeadquarters_HandWristElb"/>
+         <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexBrazil"/>
+         <class name="tests.requests.ApprovalProcessSDLFellow_ArthroLabTMMexicoCity"/>
+         <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexCorporateHeadquarters_FootandAnkle"/>
+         <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexSingapore"/>
+         <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexMexico"/>
+         <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexCorporateHeadquarters_OrthoImagandResec"/>
+         <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexCorporateHeadquarters_SholderKneeHipArth"/>
+         <class name="tests.requests.ApprovalProcessSDLFellow_ArthrexMexicoMonterrey"/>
+    
+    </classes>
+	</test>
+	
+	<test verbose="2" name="REQUEST-Medical Education">
+    <classes>
+    
+    	 <class name="tests.requests.CreateMedicalEducationRequest"/>
+   		 <class name="tests.requests.ApprovedDatesMedicalEducation_MeetingAndEventUsers"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthrexBrazil"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthrexResearchLab"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthrexOne"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthrexStudio360"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthrexSingapore"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_OtherLocation_pleasespecify"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_MexicoMobileLearningCenter"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthrexCorporateHeadquarters"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthroLabTMMexicoCity"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthrexMexico"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_OtherLocation_pleasespecify_LabOperations"/>
+   		 <class name="tests.requests.ApprovalProcessMedicalEducation_ArthrexMexicoMonterrey"/>
+     
+    </classes>
+	</test>
+	
+	<test verbose="2" name="REQUEST-Corporate Sales">
+    <classes>
+    
+     	 <class name="tests.requests.ApprovedDatesCorporateSales_MeetingAndEventUsers"/>
+    	 <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexSingapore"/>
+    	 <class name="tests.requests.ApprovalProcessCorporateSales_ArthroLabTMMexicoCity"/>
+    	 <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexResearchLab"/>
+    	 <class name="tests.requests.ApprovalProcessCorporateSales_OtherLocation_pleasespecify"/>
+    	 <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexStudio360"/>
+      	 <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexCorporateHeadquarters"/>
+         <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexOne"/>
+         <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexBrazil"/>
+         <class name="tests.requests.ApprovalProcessCorporateSales_MexicoMobileLearningCenter"/>
+      	 <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexMexico"/>
+      	 <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexCorporateHeadquarters_LabOperations"/>
+      	 <class name="tests.requests.ApprovalProcessCorporateSales_ArthrexMexicoMonterrey"/>
+    	     
+    </classes>
+	</test>
+	
+	<test verbose="2" name="REQUEST-HCP - Business Meeting">
+    <classes>
+    
+     	  <class name="tests.requests.CreateHCPBusinessMeetingRequest"/>
+     	  <class name="tests.requests.ApprovalProcessHCPBusinessMeeting_ArthrexOne"/>
+     	  <class name="tests.requests.ApprovalProcessHCPBusinessMeeting_VirtualArthrexExperience"/>
+     	  <class name="tests.requests.ApprovalProcessHCPBusinessMeeting_ArthrexCorporateHeadquarters"/>
+     	  <class name="tests.requests.ApprovalProcessHCPBusinessMeeting_OtherLocation_pleasespecify"/>
+      	  <class name="tests.requests.ApprovalProcessHCPBusinessMeeting_ArthrexStudio360"/>
+     	  
+    </classes>
+	</test>
+	
+	<test verbose="2" name="REQUEST-Other">
+	  <classes>
+    
+      	<class name="tests.requests.CreateMultipleChildRequests_AgencyPartner"/>
+    	<class name="tests.requests.ExhibitCongress_AgencyPartner"/>
+      	<class name="tests.requests.CreateInstructorRequest"/>
+      	<class name="tests.requests.CreateSponsorshipWorkshopRequest"/>
+     	<class name="tests.requests.CancelRequest"/>
+          
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

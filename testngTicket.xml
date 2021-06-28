@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="SFDC-Salesforce" parallel="none" thread-count="1">
+
+	<listeners>
+		<listener class-name="utilities.Executor" />
+	</listeners>
+		
+	<test verbose="2" name="TICKETS-HCP">
+		<classes>
+			<class name="tests.tickets.ApprovalProcessTicketsHierarchyChangeRequestDenied" />
+			<class name="tests.tickets.ApprovalProcessTicketsHierarchyChangeRequest" />
+			<class name="tests.tickets.CreateHierarchyChangeRequestTicket" />
+			<class name="tests.tickets.CreateQuestionTickets" />
+			<class name="tests.tickets.CreateNewHcpTickets" />
+			<class name="tests.tickets.ViewTicketsAgencyPartner" />
+			<class name="tests.tickets.CreateIssueTickets" />
+			<class name="tests.tickets.TicketsCreationEditInternalUser" />
+			<class name="tests.tickets.CreateSuggestionTickets" />
+			<class name="tests.tickets.CreateNewSecondaryHCP" />
+			<class name="tests.tickets.CreateHelpAndFeedbackTicket" /> 
+			<class name="tests.tickets.CreateCorpCommIntakeForm" /> 
+			<class name="tests.tickets.CreateInternalRequest" /> 
+			<class name="tests.tickets.CreateTicketsForTicketTypes" /> 
+			<class name="tests.tickets.CreateUpdateContactInformation" /> 
+			
+		</classes>
+	</test>
+	
+	<test verbose="2" name="TICKETS-ORTHOPEDIA">
+		<classes>
+			<class name="tests.tickets.orthopedia.ApproveOrthopediaTicketHCPDataValidation" />
+			<class name="tests.tickets.orthopedia.AutoApprovalOrthopediaTicket" />
+			<class name="tests.tickets.orthopedia.BounceEmail" />
+			<class name="tests.tickets.orthopedia.OrthopediaTicket_CreateEditView" />
+			<class name="tests.tickets.orthopedia.RejectOrthopediaTicketExistingAccountValidation" />
+			<class name="tests.tickets.orthopedia.RejectOrthopediaTicketHCPDataValidation" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="TICKETS-FAD">
+		<classes> 
+		<class name="tests.tickets.fad.InitialFaDAddTicket_FaDAdminApprovalProcess" />
+			<class name="tests.tickets.fad.InitialFaDAddTicket_RegionalManagerApprovalProcess" />
+			<class name="tests.tickets.fad.AddAdditionalLocationsTicket_FaDAdminApprovalProcess" />
+			<class name="tests.tickets.fad.AdditionalFaDBrandTicket_RegionalManagerApprovalProcess" />
+			<class name="tests.tickets.fad.UpdateFaDTicket_HCPDataValidationApprovalProcess" />
+			<class name="tests.tickets.fad.RemoveFaDTicket_HCPDataValidationApprovalProcess" />
+			<class name="tests.tickets.fad.AddAdditionalLocationsTicket_FaDAdminRejected" />
+			<class name="tests.tickets.fad.AdditionalFaDBrandTicket_RegionalManagerRejected" />
+			<class name="tests.tickets.fad.UpdateFaDTicket_HCPDataValidationReject" />
+				</classes>
+	</test>
+
+</suite>

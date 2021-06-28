@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="SFDC" parallel="none"
+	thread-count="1">
+
+	<test verbose="2" name="ACCOUNTS">
+		<classes>
+			<class
+				name="tests.accounts.CreateEditViewNationalAccount_AgencyPartnerUser" />
+			<class
+				name="tests.accounts.InventoryProfileHCOAccount_AgencyPartnerUser" />
+		</classes>
+	</test>
+
+
+	<test verbose="2" name="EVENTS">
+		<classes>
+			<class
+				name="tests.events.CreateEditViewCloneSurgicalCaseEventCalendar" />
+		</classes>
+	</test>
+
+
+	<test verbose="2" name="LEADSAPP">
+		<classes>
+			<class name="tests.LeadsApp.CreateNewConference" />
+			<class name="tests.LeadsApp.ConferenceAttendeeUpload" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="OPPORTUNITIES">
+		<classes>
+			<class
+				name="tests.opportunities.AgreementOpportunity_AGENCYPARTNER" />
+			<class
+				name="tests.opportunities.NationalAccountOpportunity_AGENCYPARTNER" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="PERSONACCOUNTS">
+		<classes>
+			<class
+				name="tests.personAccounts.CreateEditHcpSurgeonSubscriptionsPersonAcc" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="REQUESTS">
+		<classes>
+			<class
+				name="tests.requests.ApprovedDatesMedicalEducation_MeetingAndEventUsers" />
+			<class 
+				name="tests.requests.ExhibitCongress_AgencyPartner" />
+			<class
+				name="tests.requests.WorkFlowProcessMedicalEducation_MexicoDivision" />
+		</classes>
+	</test>
+
+
+	<test verbose="2" name="TASKS">
+		<classes>
+			<class name="tests.tasks.CreateEditDigitalActivityTask" />
+		</classes>
+	</test>
+
+	<test verbose="2" name="TICKETS">
+		<classes>
+			<class name="tests.tickets.ApprovalProcessTicketsHierarchyChangeRequest" />
+			<class name="tests.tickets.orthopedia.AutoApprovalOrthopediaTicket" />
+		</classes>
+	</test>
+
+</suite> <!-- Suite -->

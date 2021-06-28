@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="utilities.Executor" />
+	</listeners>
+
+  <test thread-count="1" name="JenkinsJobTest">
+    <classes>
+     		<class name="tests.agreement.clm.Create_Edit_View_CopyrightandLicenseAgreement" />
+    </classes>
+  </test> <!-- JenkinsJobTest -->
+</suite> <!-- Suite -->

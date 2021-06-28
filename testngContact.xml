@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="SFDC-Salesforce" parallel="none" thread-count="1">
+
+	<listeners>
+		<listener class-name="utilities.Executor" />
+	</listeners>
+	
+	<test thread-count="5" name="CONTACTS">
+		<classes>
+			<class name="tests.contacts.ValidateNewFieldsForContactsPage" />
+			<class name="tests.contacts.Create_Edit_View_DistributorEmployee" />
+			<class name="tests.contacts.Edit_View_ArthrexEmployee" />
+		</classes>
+	</test> <!-- "CONTACTS" -->
+</suite> <!-- Suite -->

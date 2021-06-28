@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<bumblebee>
+    <!-- URL of the Bumblebee Server -->
+    <bumblebee_url>http://AME-SLS-PRD02:8282/bumblebee</bumblebee_url>
+    <!-- URL of HP ALM Server -->
+    <alm_url>http://ame-alm-prd03:8080/qcbin</alm_url>
+    <!-- Name of HP ALM User -->
+    <alm_user>Jenkins_User</alm_user>
+    <!-- Encrypted password: please use http://server_name:port/bumblebee/password/encrypt to encrypt your plain text password  -->
+    <alm_encrypted_pass>y2IhAnZ532dzvifFbOMhGQ==</alm_encrypted_pass>
+    <!-- HP ALM Domain -->
+    <alm_domain>Automation</alm_domain>
+    <!-- HP ALM Project -->
+    <alm_project>Salesforce_Automation</alm_project>
+    <property name="testsetvalue">Regression</property>
+    <property name="testlabvalue">Root\Salesforce Automation | Change Requests\2020\CCB | 2020-09-18 | RFC#11813 | Sep Release\SQA</property>
+<!--     <property name="testlabvalueclm">Root\Apttus CLM Automation | Change Requests\2020\CCB | 2020-07-17 | RFC#10916 | July Release\SQA</property> -->
+    <!-- Asynchronous (offline) update -->
+    <async_update>False</async_update>
+     <!-- ScreenShotOnFailure - Controls attaching screenshots for failed tests -->
+    <screenshotOnFailure>true</screenshotOnFailure>
+    <!-- Enabled - Controls writing results to ALM -->
+    <enabled>False</enabled>
+  
+</bumblebee>
